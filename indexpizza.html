@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css">
+    <script src="bootstrap-5/jquery.js"></script>
+
+    <style>
+
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+}
+section{
+    background-image: linear-gradient(rgba(22, 23, 104, 0.7), rgba(11, 11, 41, 0.8)), url('https://i.pinimg.com/originals/ba/00/12/ba0012e9e262f582e690c80d1ddc8b2d.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-attachment: fixed;
+}
+nav{
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+nav .row .img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+nav .row .ul{
+    word-spacing: 15px;
+} 
+nav .col-sm-6 button{
+    background-color: orangered;
+    width: 130px;
+    padding: 3px;
+    border: none;
+    color: white;
+    margin: auto;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+
+
+.container{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 80px;
+}
+.container .p{
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: white;
+    
+}
+.container .box img{
+    border-radius: 1500px;
+    width: 150px;
+    height: 150px;
+}
+.container button{
+    background-color: rgb(241, 73, 12);
+    width: 130px;
+    border: none;
+    color: white;
+    padding: 4px;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width:300px) and (max-width:500px) 
+{
+    .container img{
+        overflow: hidden;
+        width: 100%;
+    }
+    .container button{
+        margin: auto;
+    }
+}
+
+    /* start opening time */
+
+.container9{
+    padding: 10px;
+    background-color: white;
+    margin-top: 150px;
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.container1 .times{
+    width: 500px;
+    text-align: justify;
+    /* padding: 5px; */
+    margin: 5px;
+}
+.container1 .times img{
+    padding: 5px;
+}
+.container1 .times button{
+    background-color: orangered;
+    color: white;
+    width: 130px;
+    padding: 3px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 3px;
+}
+
+.container1 .ocj{
+    margin-top: 50px;
+    width: 500px;
+    text-align: justify;
+}
+.container1 .ocj img{
+    padding: 5px;
+}
+
+@media screen and (min-width:330px) and (max-width:500px) 
+{
+    .container1 .times img
+    {
+        width: 100%;
+    }
+    .container1 .ocj img{
+        width: 100%;
+    }
+    .ab{
+        flex-direction: column-reverse;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+    }
+    .ab p{
+        height: auto;
+    }
+    
+}
+    /* close opening time */
+
+
+    /* start special dishes */
+
+.container2{
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/* .container2 h3{
+    line-height: 1px;
+} */
+.container2 .dish{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    line-height: normal;
+}
+
+.dish .box1{
+    width: 500px;
+    text-align: justify;
+    margin: 10px;
+}
+.dish .box1 img{
+    float: left;
+    margin: 6px;
+}
+.dish .box1 span{
+    float: right;
+    color: red;
+    font-weight: 600;
+}
+
+@media screen and (min-width:300px) and (max-width:500px)
+{
+    .container2{
+        margin: 5px;
+    }
+}
+
+/* dish close */
+
+/* main start */
+.menu{
+    /* display: block; */
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.menu .h3, .p{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    line-height: 15px;
+} 
+.main{
+    margin: auto;
+    width: 1000px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main p{
+    color: black;
+    text-align: justify;
+}
+.main .mm{
+    width: 480px;
+    height: auto;
+    padding: 5px;
+    margin: 10px;
+}
+.main .mm span{
+    float: right;
+    color: red;
+    font-weight: 600;
+}
+.main button{
+    width: 130px;
+    padding: 3px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 1px;
+    letter-spacing: 1px;
+}
+@media screen and (min-width:300px) and (max-width:500px) 
+{
+    .menu{
+        /* grid-template-columns: (2, 1fr); */
+        overflow: hidden;
+        width: auto;
+        margin: 5px;
+    }
+    .main{
+        grid-template-columns: (2, 1fr);
+        display: inline-block;
+    }
+    .main .mm span{
+        overflow: hidden;
+        /* float: left; */
+
+    }
+    button{
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0px 0px 100px;
+    }
+}
+/* main menu end */
+
+
+ 
+/* start talented chefs */
+
+.chefs{
+    background-color: white;
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.chefs #h3, #h6{
+    text-align: center;
+    justify-content: center;
+    
+}
+.tal{
+    display: flex;
+    flex-wrap: wrap;
+    width:1000px;
+    margin: auto;
+}
+.tal .che{
+    width: 320px;
+}
+.tal .che img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+@media screen and (min-width:300px) and (max-width:500px)
+{
+    .tal{
+        display: inline-block;
+        width: auto;
+    }
+}
+/* end */
+
+    </style>
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="row p-1">
+                <div class="col-lg-6 img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcFZd09cU2Bo58SXK0oV8Q2nsAafUIlTeEw&usqp=CAU" alt=""></div>
+                <div class="col-lg-6 mt-2"><h6><span style=color:red>CALL US</span> +91 474 57 74365</h6></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 ul">
+                    <!-- <span>Home</span> -->
+                    <span> <a href="E:\shubham yadav FSD\MyWebsite\MyFirstwebsite.html">AboutUs</a></span>
+                    <span>OurServices</span>
+                    <span>OurTeam</span>
+                    <span>Testimonial</span>
+                </div>
+                <div class="col-sm-6">
+                    <button>Components</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="box">
+                <img src="https://st2.depositphotos.com/3038577/10113/v/950/depositphotos_101131748-stock-illustration-emblem-of-funny-cook-or.jpg" alt="">
+            </div><br>
+            <p class="p">Welcome To Our Restaurant</p>
+            <h1>Really Fresh & Tasty</h1>
+            <button>Book A Table</button>
+        </div>
+
+
+            <!-- Opening time start -->
+
+        <div class="container9">
+            <div class="container1">
+                <div class="times">
+                    <p>Opening Times</p>
+                    <h4>Working Times</h4>
+                    <h6> <span>Monday - Thursday</span> : 2:00 am - 12:00 pm</h6>
+                    <h6> <span>Friday - Saturday</span> : 7:00 am - Midnight</h6>
+                    <h6> <span>Saturday - Sunday</span> : 8:00 am - 12:00 pm</h6><br>
+                    <button class="btn">Book A Table</button>
+                </div>
+                <div class="times">
+                    <img src="https://image.made-in-china.com/202f0j00okqUbygPMOcJ/Pizza-Restaurant-Dining-Table-and-Sofa-Booth-FOH-RFS1-.jpg" alt="" width="240px" height="360px">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgMYm9IC5ToGD_ZRmQX7OqdKzoIkW09p9rmZl9VfeG33t8kGHC2RvyFyZaLljGAhzG0nM&usqp=CAU" alt="" width="240px" height="360px">
+                </div>
+            </div>
+            <div class="container1 ab">
+                <div class="ocj">
+                    <img src="https://www.interior-design.biz/wp-content/uploads/2019/05/dominos-pizza-interior-design-010-1.jpg" alt="" width="240px" height="360px">
+                    <img src="https://m.media-amazon.com/images/I/81bf83jJvGL._AC_UF1000,1000_QL80_.jpg" width="240px" height="360px" alt="">
+                </div>
+                <div class="ocj">
+                    <p>The Great Story</p><hr>
+                    <h4>Our Client Journey</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ea perspiciatis adipisci earum quam, atque est quis nam officiis rem, ut delectus iure nisi quas tempora praesentium! Labore, quia architecto.</p>
+                </div>
+            </div>
+                <!-- close Opening time -->
+
+            <!-- Special dishes start -->
+
+            <div class="container2">
+                <p>Featured Food</p>
+                <h3>Special Dishes</h3>
+
+                <div class="dish">
+                    <div class="box1">
+                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2015/10/pizza-recipe-1.jpg" alt="" width="70px" height="100px">
+                        <p>Aperiam incidunt dicta <span>$25</span></p><hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laboriosam!</p>
+
+                    </div>
+                    <div class="box1">
+                        <img src="https://static.toiimg.com/thumb/53339084.cms?width=1200&height=900" alt="" width="70px" height="100px">
+                        <p>chicken pizza <span>$20</span></p><hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laboriosam!</p>
+
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="box1">
+                        <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Chicken-Pizza_exps30800_FM143298B03_11_8bC_RMS-9.jpg" alt="" width="70px" height="100px">
+                        <p>Aperi chicken dicta <span>$55</span></p><hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laboriosam!</p>
+
+                    </div>
+                    <div class="box1">
+                        <img src="https://www.recipetineats.com/wp-content/uploads/2020/05/Pepperoni-Pizza_5-SQjpg.jpg" alt="" width="70px" height="100px">
+                        <p>incidunt dicta <span>$29</span></p><hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laboriosam!</p>
+
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="box1">
+                        <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/07/pizza-1296x728-header.jpg?w=1155&h=1528" alt="" width="70px" height="100px">
+                        <p>cream incidunt <span>$38</span></p><hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laboriosam!</p>
+
+                    </div>
+                    <div class="box1">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz_ITJM3AqRd0JSFfXER7KAt0HAs_SGpIQ4jjtjzmkQ22cUOpqP29PvoF8EQJfOCD9lxM&usqp=CAU" alt="" width="70px" height="100px">
+                        <p>incidunt flaour <span>$45</span></p><hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laboriosam!</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main menu start -->
+        <div class="menu">
+            <p class="p">Great Food</p>
+            <h3 class="h3">Main Menu</h3><br><br>
+            <div class="main">
+                <div class="mm">
+                    <p>Dolorem Exdpancve <span>$12</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis?</p><hr><br><br>
+
+                    <p>Dolorem Exdpancve <span>$12</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis?</p><hr><br><br>
+
+                    <p>Dolorem Exdpancve <span>$12</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis?</p><hr>
+                </div>
+                <div class="mm">
+                    <p>Dolorem Exdpancve <span>$12</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis?</p><hr><br><br>
+
+                    <p>Dolorem Exdpancve <span>$12</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis?</p><hr><br><br>
+
+                    <p>Dolorem Exdpancve <span>$12</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipis?</p><hr>
+                </div>
+                <button>Book A Table</button><br><br>
+            </div>
+        </div>
+        <!-- main menu end -->
+
+
+        <!-- talented chefs start -->
+        <div class="chefs">
+            <h6 id="h6">Great Team</h6>
+            <h3 id="h3">Talented  Chefs</h3><br><br>
+            <div class="tal">
+                <div class="che">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsZGD0ulmBZdPNN9ahsekQ4eye_5A-eXTDiw&usqp=CAU" alt="">
+                    <h5>lorem desuza</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt voluptatem veniam dolor quae totam atque.</p>
+                </div>
+                <div class="che">
+                    <img src="https://cdn1.vectorstock.com/i/1000x1000/26/95/pizzeria-fast-food-logo-or-label-happy-chef-vector-21132695.jpg" alt="">
+                    <h5>lorem desuza</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt voluptatem veniam dolor quae totam atque.</p>
+                </div>
+                <div class="che">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgWZmf1JIFHUsLqv3cFsV17hLx83Nj8l2VeA&usqp=CAU" alt="">
+                    <h5>lorem desuza</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt voluptatem veniam dolor quae totam atque.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- chefs End -->
+
+        <!-- start Testimonial -->
+
+        <div class="Testimonial">
+            <div class="test">
+                <img src="" alt="">
+                <h4>Jhone Doe</h4>
+                <p>Business Analyst</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, facere ipsa numquam eligendi ut ex rem sequi aliquam eius nemo obcaecati labore, possimus veritatis vel expedita nam dignissimos dolore praesentium.</p>
+            </div>
+            <div class="test">
+                <img src="" alt="">
+                <h4>Jhone Doe</h4>
+                <p>Business Analyst</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, facere ipsa numquam eligendi ut ex rem sequi aliquam eius nemo obcaecati labore, possimus veritatis vel expedita nam dignissimos dolore praesentium.</p>
+            </div>
+            <div class="test">
+                <img src="" alt="">
+                <h4>Jhone Doe</h4>
+                <p>Business Analyst</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, facere ipsa numquam eligendi ut ex rem sequi aliquam eius nemo obcaecati labore, possimus veritatis vel expedita nam dignissimos dolore praesentium.</p>
+            </div>
+        </div>
+        <!-- end Testimonial -->
+    </section>
+
+
+    <script src="bootstrap-5/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
